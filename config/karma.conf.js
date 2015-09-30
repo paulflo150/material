@@ -6,7 +6,7 @@ module.exports = function(config) {
     // To enabled use of `gulp karma-watch`,
     // don't use the dist/angular-material.js
     //
-    //'dist/angular-material.js',   // Un-minified source
+    'dist/angular-material.js',   // Un-minified source
 
 
     // Test utilities, source, and specifications.
@@ -16,17 +16,17 @@ module.exports = function(config) {
 
     'dist/angular-material.css',
 
-    'src/core/**/*.js',
-    'src/components/*/*.js',
-    'src/components/*/js/*.js',
+    //'src/core/**/*.js',
+    //'src/components/*/*.js',
+    //'src/components/*/js/*.js',
 
-    'src/**/*.spec.js'
+    'src/core/services/layout/*.spec.js'
   ];
 
   var COMPILED_SRC = [
     'dist/angular-material.min.css',
     'dist/angular-material.min.js',   // Minified source
-    'src/**/*.spec.js'
+    'src/core/services/aria/*.spec.js'
   ];
 
   var dependencies = process.env.KARMA_TEST_JQUERY ? ['node_modules/jquery/dist/jquery.js'] : [];
